@@ -1,0 +1,40 @@
+async function selection_sort(array){
+    disable_button("narray");
+    disable_button("bsort");
+    disable_button("isort");
+    disable_button("ssort");
+    disable_button("qsort");
+    disable_button("msort");
+    hr=document.getElementById("xoxo")
+    div_bars=document.getElementsByClassName("bar");
+    len=div_bars.length;
+    for(i=0;i<len;i++){
+        div_bars[i].style.backgroundColor="red";
+        for(j=i+1;j<len;j++){
+            div_bars[j].style.backgroundColor="blue";
+            if(j%2==0){
+                hr.style.backgroundColor="green";
+                hr.style.borderColor="green"
+            }
+            await delay_(1);
+            if (array[j]<array[i]){
+                swap(div_bars[i],div_bars[j]);
+                div_bars[j].style.backgroundColor="greenyellow";
+                div_bars[i].style.backgroundColor="red";
+                [array[i],array[j]]=[array[j],array[i]];
+                hr.style.backgroundColor="yellowgreen";
+                hr.style.borderColor="yellowgreen"
+            }
+            div_bars[j].style.backgroundColor="greenyellow";
+        }
+        div_bars[i].style.backgroundColor="green";
+    }
+    hr.style.backgroundColor="green";
+    hr.style.borderColor="green";
+    enable_button("narray");
+    enable_button("bsort");
+    enable_button("isort");
+    enable_button("ssort");
+    enable_button("qsort");
+    enable_button("msort");
+}

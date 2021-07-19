@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    user-select: none;   
+}
+
+body{
+    background-image: linear-gradient(90deg,#5D6D7E,#34495E,#2E4053,#283747);
+}
+
+hr{
+    margin-left: 19.7%;
+    margin-right: 19.75%;
+    border: none;
+    border: solid;
+    border-width: 2px;
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+#div{
+    border: white 0.5px dotted;
+}
+
+.heading{
+    color: black;
+    text-align: center;
+}
+
+.heading h5 span{
+    font-size: xx-large;
+    border: double 5px greenyellow;
+    padding: 5px;
+    background-image: linear-gradient(45deg,#00F48F,#CBE100);
+    box-shadow: 0px 0px 5px greenyellow;
+}
+
+.button_container{
+    margin-top: -5px;
+    padding: 2% 2% 1% 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.button_container button{
+    padding: 5px;
+    
+    color: black;
+    font-weight: bold;
+    font-family: comic,sans-serif;
+    background-image: linear-gradient(45deg,#FF8E43,#ffa467,#ff5fdf,#FF00CB);
+    border-radius: 5px;
+}
+.button_container button:hover{
+    color: black;
+    background-image: linear-gradient(45deg,#00F48F,#CBE100);
+}
+
+.button_container button:active{
+    border: none;
+    color: black;
+    border: 1px solid #F1C40F;
+    border-left:#F1C40F 1.5px solid;
+    border-top:#F1C40F 1.5px solid;
+    border-right:#B03A2E 1.5px solid;
+    border-bottom:#B03A2E 1.5px solid;
+    background-image: linear-gradient(45deg,red,yellow);
+}
+
+#bar_container
+{
+    margin-top: -8px ;
+    position: absolute;
+    left: 20%;
+    display: flex;
+    width:60%;
+    height: 70%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.bar
+{
+    width: 6px;
+    background-color: greenyellow;
+    box-shadow: 0.5px 1.5px 0px black;
+} 
